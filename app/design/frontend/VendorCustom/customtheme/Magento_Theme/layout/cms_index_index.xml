@@ -1,0 +1,19 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="3column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <container name="custom.wrapper" htmlTag="div" htmlClass="my-container-class" before="-" label="Custom Wrapper">
+                <block class="Magento\Framework\View\Element\Template" name="custom.block.one" template="Magento_Theme::block_one.phtml"/>
+                <block class="Magento\Cms\Block\Block" name="home.slider.block">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">home_slider</argument>
+                    </arguments>
+                </block>
+                <block class="Magento\Framework\View\Element\Template" name="custom.block.two" template="Magento_Theme::block_two.phtml"/>
+            </container>
+        </referenceContainer>
+
+        <referenceBlock name="wishlist_sidebar" remove="true"/>
+        <referenceBlock name="catalog.compare.sidebar" remove="true"/>
+    </body>
+</page>
+

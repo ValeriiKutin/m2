@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <script src="js/slick.min.js"/>
+        <script src="js/slider-init.js"/>
+        <css src="css/slick.css"/>
+        <css src="css/slick-theme.css"/>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <container name="product.custom.container" htmlTag="div" htmlClass="product-custom-container"/>
+        </referenceContainer>
+
+        <referenceBlock name="product.custom.container">
+            <block class="Magento\Catalog\Block\Product\View" name="custom.tab" template="Magento_Theme::custom-tabs.phtml"/>
+        </referenceBlock>
+
+        <move element="product.custom.container.fortitle" destination="content" before="-"/>
+        <move element="product.custom.container" destination="content" before="-"/>
+
+
+        <!--Блок тексту товару і деякої інформаціґ про товар в одному блоці-->
+            <referenceContainer name="content">
+                <container name="product.custom.container.fortitle" htmlTag="div" htmlClass="product-custom-container-fortitle"/>
+            </referenceContainer>
+            <move element="page.main.title" destination="product.custom.container.fortitle" before="-"/>
+            <move element="product.info.stock.sku" destination="product.custom.container.fortitle" after="page.main.title"/>
+        <!---->
+
+
+
+        <!--в новй контейнер product.custom.container.second вставив qty.phtml з початку і після нього product.price.final
+            дістав qty з html і вставив в phtml
+        -->
+        <referenceBlock name="product.info.form.options">
+            <container name="product.custom.container.second" htmlTag="div" htmlClass="product-custom-container-second" after="product.info.options.wrapper"/>
+        </referenceBlock>
+
+        <referenceContainer name="product.custom.container.second">
+            <block class="Magento\Catalog\Block\Product\View" name="product.info.qty" template="Magento_Catalog::product/view/qty.phtml"/>
+        </referenceContainer>
+        <move element="product.price.final" destination="product.custom.container.second" after="product.info.qty"/>
+        <!---->
+    </body>
+</page>
