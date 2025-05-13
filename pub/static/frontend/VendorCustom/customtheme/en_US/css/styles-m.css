@@ -12751,9 +12751,9 @@ fieldset[disabled] .sidebar .block-addbysku .action.remove {
   display: flex;
   justify-content: space-between;
 }
-.columns .column.main {
-  width: 100% !important;
-}
+/*.columns .column.main{
+    width: 100% !important;
+}*/
 .simple-modal {
   position: fixed;
   top: 0;
@@ -12888,11 +12888,13 @@ fieldset[disabled] .sidebar .block-addbysku .action.remove {
 .custom-review-style .rating-summary .rating-result {
   background-color: #b4b2b2;
 }
-.products.wrapper.grid.products-grid .products.list.items.product-items {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 42px;
-}
+/*.products.wrapper.grid.products-grid{
+    .products.list.items.product-items{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 42px;
+    }
+}*/
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
   .page-products .products-grid .product-item {
     margin-left: 2%;
@@ -12901,9 +12903,6 @@ fieldset[disabled] .sidebar .block-addbysku .action.remove {
   .page-products .products-grid .product-item:nth-child(3n + 1) {
     margin-left: 0;
   }
-}
-.columns {
-  display: flex !important;
 }
 /**
  * Copyright © Magento, Inc. All rights reserved.
