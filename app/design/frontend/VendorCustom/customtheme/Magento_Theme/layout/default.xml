@@ -26,9 +26,9 @@
 <!--        </referenceContainer>-->
 
 <!--        <container htmlTag="div" htmlClass="custom-container" htmlId="custom_container"/>-->
-     <block class="Magento\Framework\View\Element\Template">
+<!--     <block class="Magento\Framework\View\Element\Template">-->
 
-     </block>
+<!--     </block>-->
 
 
     </body>

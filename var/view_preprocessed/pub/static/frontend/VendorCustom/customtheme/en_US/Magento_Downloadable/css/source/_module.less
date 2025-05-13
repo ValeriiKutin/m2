@@ -8,21 +8,61 @@
 //  _____________________________________________
 
 & when (@media-common = true) {
-    .downloadable.samples {
-        margin-bottom: @indent__base;
+    .table-downloadable-products {
+        .product-name {
+            font-weight: @font-weight__regular;
+            margin-right: 15px;
+        }
 
-        dd {
+        .action.download {
+            .lib-icon-font(
+                @_icon-font-content: @icon-download,
+                @_icon-font-margin: 0 5px 0 0
+            );
+        }
+    }
+
+    .page-product-downloadable {
+        .product-add-form {
+            clear: both;
+            margin-bottom: @indent__m;
+            &:extend(.abs-add-clearfix all);
+        }
+
+        .product-options-bottom {
+            .field.qty {
+                display: none;
+            }
+        }
+
+        .product-options-wrapper {
+            .fieldset {
+                .legend.links-title {
+                    &:extend(.abs-visually-hidden all);
+                }
+            }
+        }
+    }
+
+    .samples {
+        &-item-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin: 0 0 @indent__s;
+        }
+
+        &-item {
             margin: 0 0 @indent__s;
         }
     }
 
-    .table-downloadable-products {
-        .product-name {
-            margin-right: 15px;
-        }
-    }
-
     .field.downloads {
+        margin-bottom: @indent__s;
+
+        .page-product-downloadable .product-add-form .product-options-wrapper & > .control {
+            width: 100%;
+        }
+
         .price-container {
             display: inline;
             white-space: nowrap;
@@ -46,36 +86,88 @@
         }
 
         .price-including-tax {
-            .lib-font-size(14);
             display: inline;
             font-weight: @font-weight__semibold;
+            .lib-font-size(14);
+        }
+
+        .field.choice {
+            border-bottom: 1px solid @color-gray92;
+            box-sizing: border-box;
+            margin-bottom: @indent__s;
+            padding-bottom: @indent__s;
+            padding-left: 25px;
+            position: relative;
+            width: 100%;
+            z-index: 1;
+
+            input {
+                left: 0;
+                position: absolute;
+                top: 2px;
+            }
+        }
+
+        .field {
+            &.downloads-all {
+                border-bottom: 0;
+                padding-left: 0;
+            }
         }
 
         .sample.link {
             float: right;
         }
+
+        &-all {
+            .label {
+                .lib-link();
+                cursor: pointer;
+            }
+
+            input {
+                opacity: 0;
+            }
+        }
+
+        &.downloads-no-separately {
+            .field.choice {
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+//
+//  Mobile
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__s) {
+    .page-product-downloadable .product-options-wrapper {
+        margin-bottom: @indent__m;
     }
 
-    .page-product-downloadable {
-        .product-add-form {
-            &:extend(.abs-add-clearfix all);
-            clear: both;
-            margin-bottom: @indent__m;
+    .table-downloadable-products {
+        .product-name {
+            display: block;
+            .lib-css(margin-bottom, @indent__xs);
         }
 
-        .product-options-bottom {
-            .field.qty {
-                display: none !important;
+        .col.title {
+            &:before {
+                &:extend(.abs-visually-hidden-mobile all);
             }
         }
+    }
 
-        .product-options-wrapper {
-            .fieldset {
-                .legend.links-title {
-                    &:extend(.abs-visually-hidden all);
-                }
-            }
-        }
+    .page-product-downloadable .product-info-price ~ *:last-child:after {
+        border-bottom: 1px solid @color-gray-light5;
+        content: '';
+        display: block;
+        height: 0;
+        margin: @indent__m -@indent__s;
+        overflow: hidden;
+        width: auto;
     }
 }
 
@@ -85,10 +177,6 @@
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
     .page-product-downloadable {
-        .product-add-form {
-            &:extend(.clearer all);
-        }
-
         .product-options-wrapper {
             float: left;
             width: 55%;
@@ -97,12 +185,6 @@
         .product-options-bottom {
             float: right;
             width: 40%;
-
-            .field.qty {
-                & + .actions {
-                    padding-top: 0;
-                }
-            }
         }
     }
 }

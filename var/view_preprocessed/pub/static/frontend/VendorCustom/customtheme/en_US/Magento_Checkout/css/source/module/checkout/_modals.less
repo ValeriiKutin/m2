@@ -21,6 +21,41 @@
                     &:extend(.abs-checkout-tooltip-content-position-top all);
                 }
             }
+
+            .fieldset {
+                .field {
+                    .label {
+                        font-weight: @font-weight__regular;
+                    }
+                }
+            }
+
+            .modal-footer {
+                .action-hide-popup {
+                    &:extend(.abs-action-button-as-link all);
+                    margin-top: 8px;
+                }
+            }
+        }
+    }
+}
+
+//
+//  Mobile
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+    .checkout-index-index {
+        .modal-popup {
+            .modal-footer {
+                .action-save-address {
+                    width: 100%;
+                }
+
+                .action-hide-popup {
+                    margin-top: @indent__base;
+                }
+            }
         }
     }
 }
@@ -39,11 +74,7 @@
             .modal-footer {
                 .action-save-address {
                     float: right;
-                    margin: 0 0 0 @indent__s;
-                }
-
-                .action-hide-popup {
-                    &:extend(.abs-action-button-as-link all);
+                    margin: 0 0 0 @indent__base;
                 }
             }
         }

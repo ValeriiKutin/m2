@@ -9,6 +9,11 @@
 
 & when (@media-common = true) {
     .block-reward-info {
+        .reward-balance {
+            .lib-font-size(18);
+            margin-bottom: @indent__m;
+        }
+
         .reward-rates,
         .reward-limit,
         .reward-expiring {
@@ -28,11 +33,9 @@
 //  Mobile
 //  _____________________________________________
 
-.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
-    .reward-settings {
-        + .actions-toolbar {
-            margin-top: 10px;
-        }
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__s) {
+    .table-wrapper.reward-history {
+        &:extend(.abs-account-table-margin-mobile all);
     }
 }
 
@@ -41,9 +44,7 @@
 //  _____________________________________________
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
-    .reward-settings {
-        + .actions-toolbar {
-            margin-top: -32px;
-        }
+    .table-wrapper.reward-history {
+        &:extend(.abs-account-table-margin-desktop all);
     }
 }

@@ -9,16 +9,32 @@
 
 & when (@media-common = true) {
     .lib-font-face(
-        @family-name: 'Custim Font',
-        @font-path: '@{baseDir}fonts/custom/Custom-Regular',
+        @family-name: 'Open Sans',
+        @font-path: '@{baseDir}fonts/opensans/light/opensans-300',
+        @font-weight: 300,
+        @font-style: normal,
+        @font-display: swap
+    );
+
+    .lib-font-face(
+        @family-name: 'Open Sans',
+        @font-path: '@{baseDir}fonts/opensans/regular/opensans-400',
         @font-weight: 400,
         @font-style: normal,
         @font-display: swap
     );
 
     .lib-font-face(
-        @family-name: 'Custom Font',
-        @font-path: '@{baseDir}fonts/custom/Custom-Bold',
+        @family-name: 'Open Sans',
+        @font-path: '@{baseDir}fonts/opensans/semibold/opensans-600',
+        @font-weight: 600,
+        @font-style: normal,
+        @font-display: swap
+    );
+
+    .lib-font-face(
+        @family-name: 'Open Sans',
+        @font-path: '@{baseDir}fonts/opensans/bold/opensans-700',
         @font-weight: 700,
         @font-style: normal,
         @font-display: swap

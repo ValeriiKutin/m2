@@ -15,14 +15,16 @@
 
     .opc-estimated-wrapper {
         &:extend(.abs-add-clearfix all);
-        .lib-css(border-bottom, @border-width__base solid @color-gray80);
-        margin: 0 0 15px;
+        .lib-css(background, @checkout-step-content-mobile__background);
+        .lib-css(border-bottom, @checkout-step-title__border);
+        .lib-css(border-top, @checkout-step-title__border);
+        .lib-css(margin, -21px -(@checkout-step-content-mobile__margin-s) @checkout-step-content-mobile__margin-s);
         padding: 18px 15px;
 
         .estimated-block {
             .lib-css(font-size, @checkout-step-title-mobile__font-size);
-            .lib-css(font-weight, @font-weight__bold);
             float: left;
+            font-weight: @font-weight__bold;
 
             .estimated-label {
                 display: block;
@@ -31,14 +33,13 @@
         }
 
         .minicart-wrapper {
-            .action {
-                &.showcart {
-                    &:before {
-                        .lib-css(color, @button__color);
-                    }
+            button {
+                //  todo ui: Change .action.showcart to .action-showcart
+                &.action.showcart {
+                    .lib-button-reset();
 
-                    &:hover:before {
-                        .lib-css(color, @button__hover__color);
+                    &:before {
+                        .lib-css(color, @primary__color);
                     }
                 }
             }

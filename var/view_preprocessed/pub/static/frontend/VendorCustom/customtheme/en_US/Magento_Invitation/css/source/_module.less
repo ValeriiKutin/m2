@@ -8,28 +8,55 @@
 //  _____________________________________________
 
 & when (@media-common = true) {
+
     .form-add-invitations {
         &:extend(.abs-add-fields all);
+
+        .fields {
+            .label {
+                &:extend(.abs-visually-hidden all);
+            }
+        }
+
+        .additional,
+        .field.message {
+            .lib-css(margin-top, @form-field__vertical-indent);
+        }
+
         .action {
+            &.remove {
+                top: 4px;
+            }
+
             &.add {
                 .lib-button-icon(
                     @_icon-font-content: @icon-expand,
                     @_icon-font-text-hide: true,
-                    @_icon-font-size: 31px
+                    @_icon-font-size: 18px
                 );
                 line-height: normal;
-                padding: 2px 0;
+                padding: 4px;
                 width: auto;
             }
         }
     }
 }
 
-.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+//
+//  Mobile
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__s) {
     .form-add-invitations {
-        .additional,
-        .field.text {
-            .lib-css(margin-top, @form-field__vertical-indent);
+        .action {
+            &.remove {
+                .lib-button-icon(
+                    @_icon-font-content: @icon-trash,
+                    @_icon-font-text-hide: true,
+                    @_icon-font-size: 18px,
+                    @_icon-font-color: @minicart-icons-color
+                );
+            }
         }
     }
 }
@@ -38,15 +65,13 @@
 //  Desktop
 //  _____________________________________________
 
-.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__s) {
     .form-add-invitations {
         &:extend(.abs-add-fields-desktop all);
-        .additional,
-        .field.text {
-            .lib-css(margin-top, @form-field__vertical-indent__desktop);
-        }
     }
+}
 
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
     .table-invitations {
         .col {
             width: 50%;

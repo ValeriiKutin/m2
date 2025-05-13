@@ -11,7 +11,7 @@
 @checkout-summary__padding: 22px @indent__l;
 
 @checkout-summary-title__margin: @indent__s;
-@checkout-summary-mark-value__color: @color-gray60;
+@checkout-summary-mark-value__color: @color-gray40;
 
 @checkout-summary-items__max-height: 370px;
 @checkout-summary-items__padding: 15px;
@@ -27,10 +27,10 @@
     //  ---------------------------------------------
 
     .opc-block-summary {
-        &:extend(.abs-add-box-sizing all);
         .lib-css(background, @checkout-summary__background-color);
+        .lib-css(margin, 0 0 @checkout-sidebar__margin);
         .lib-css(padding, @checkout-summary__padding);
-        margin: 0 0 @indent__base;
+        &:extend(.abs-add-box-sizing all);
 
         > .title {
             &:extend(.abs-checkout-title all);
@@ -83,7 +83,7 @@
                 border-bottom: @border-width__base solid @border-color__base;
                 .lib-css(padding, @indent__s @indent__xl @indent__s 0);
                 cursor: pointer;
-                .lib-icon-font(@icon-down, @_icon-font-size: 30px, @_icon-font-line-height: 12px, @_icon-font-text-hide: true, @_icon-font-margin: 3px 0 0, @_icon-font-position: after, @_icon-font-display: block);
+                .lib-icon-font(@icon-down, @_icon-font-size: 12px, @_icon-font-line-height: 12px, @_icon-font-text-hide: true, @_icon-font-margin: 3px 0 0, @_icon-font-position: after, @_icon-font-display: block);
                 margin-bottom: 0;
                 position: relative;
 
@@ -131,6 +131,10 @@
         }
 
         .product-item {
+            .product-item-details {
+                &:extend(.abs-add-clearfix all);
+            }
+
             .product-item-inner {
                 display: table;
                 margin: 0 0 @indent__s;
@@ -138,14 +142,14 @@
             }
 
             .product-item-name-block {
-                display: table-cell;
+                display: block;
                 padding-right: @indent__xs;
                 text-align: left;
             }
 
             .subtotal {
-                display: table-cell;
-                text-align: right;
+                display: block;
+                text-align: left;
             }
 
             .price {
@@ -155,12 +159,14 @@
 
             .price-including-tax {
                 & + .price-excluding-tax {
-                    margin: 0;
-
                     .price {
                         .lib-font-size(10);
                     }
                 }
+            }
+
+            .message {
+                margin-top: 10px;
             }
         }
 
@@ -171,7 +177,6 @@
             .secondary {
                 border-top: @border-width__base solid @border-color__base;
                 display: block;
-                float: none;
                 margin: -1px 0 0;
                 padding: 15px 0 0;
                 text-align: left;
@@ -185,6 +190,25 @@
 }
 
 //
+//  Mobile
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__s) {
+    .opc-block-summary {
+        > .title {
+            border-bottom: 0;
+            .lib-css(font-size, @checkout-step-title-mobile__font-size);
+            margin-bottom: @indent__base;
+            padding-bottom: 0;
+        }
+
+        .totals {
+            &:extend(.abs-sidebar-totals-mobile all);
+        }
+    }
+}
+
+//
 //  Desktop
 //  _____________________________________________
 
@@ -193,6 +217,30 @@
         .modal-header {
             .action-close {
                 display: none;
+            }
+        }
+    }
+}
+
+//
+//  Tablet
+//  _____________________________________________
+
+@media only screen and (max-width: @screen__m) {
+    .opc-block-summary {
+        .product-item {
+            .product-item-inner {
+                display: block;
+            }
+
+            .product-item-name-block {
+                display: block;
+                text-align: left;
+            }
+
+            .subtotal {
+                display: block;
+                text-align: left;
             }
         }
     }

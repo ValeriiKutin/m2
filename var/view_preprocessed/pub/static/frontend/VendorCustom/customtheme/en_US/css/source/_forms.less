@@ -7,6 +7,7 @@
 //  Variables
 //  _____________________________________________
 
+@legend-border-bottom: 1px solid @color-gray-light6;
 @form-field__vertical-indent__desktop: 29px;
 @form-calendar-icon__color: @primary__color;
 
@@ -17,6 +18,7 @@
 & when (@media-common = true) {
     .fieldset {
         .lib-form-fieldset();
+
         &:last-child {
             margin-bottom: @indent__base;
         }
@@ -24,10 +26,9 @@
         > .field,
         > .fields > .field {
             .lib-form-field();
-
             &.no-label {
                 > .label {
-                    &:extend(.abs-visually-hidden all);
+                    .lib-visually-hidden();
                 }
             }
 
@@ -35,6 +36,7 @@
                 .label {
                     display: inline;
                     font-weight: normal;
+                    margin: 0;
                 }
             }
 
@@ -51,10 +53,6 @@
                     margin-bottom: 0;
                 }
             }
-
-            input[type=file] {
-                margin: @indent__xs 0;
-            }
         }
     }
 
@@ -64,8 +62,8 @@
     }
 
     .legend {
-        strong {
-            margin-left: @indent__xs;
+        > span {
+            margin-right: @indent__xs;
         }
     }
 
@@ -76,8 +74,6 @@
 
     .field {
         &.date {
-            &:extend(.abs-field-date all);
-
             .time-picker {
                 display: inline-block;
                 margin-top: @indent__s;
@@ -90,6 +86,26 @@
                 margin-top: @indent__s;
             }
         }
+    }
+
+    .select-styling() {
+        .lib-css(appearance, none, 1);
+        appearance: none;
+        background-size: 30px 60px;
+        text-indent: .01em;
+        text-overflow: '';
+
+        &::-ms-expand {
+            display: none;
+        }
+    }
+
+    select {
+        .select-styling();
+    }
+
+    select.admin__control-multiselect {
+        height: auto;
     }
 
     .field-error,
@@ -112,6 +128,8 @@
             }
         }
     }
+
+    //  TEMP
 
     .field .tooltip {
         .lib-tooltip(right);
@@ -138,6 +156,7 @@
             @_icon-font-text-hide: true
             );
             display: inline-block;
+            margin-top: -4px;
             vertical-align: middle;
 
             &:focus {
@@ -147,9 +166,16 @@
         }
     }
 
+    .field.date,
+    .field-dob {
+        ._has-datepicker {
+            &:extend(.abs-field-date-input all);
+        }
+    }
+
     //
     //  Sidebar forms
-    //  -----------------------------------------
+    //  ---------------------------------------------
 
     .sidebar {
         .fieldset {
@@ -181,14 +207,7 @@
 //  _____________________________________________
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
-    .fieldset {
-        .legend {
-            &:extend(.abs-margin-for-forms-desktop all);
-        }
-
-        > .field {
-            .lib-form-field-type-revert();
-            margin: 0 0 @form-field__vertical-indent__desktop;
-        }
+    .legend {
+        .lib-css(border-bottom, @legend-border-bottom);
     }
 }

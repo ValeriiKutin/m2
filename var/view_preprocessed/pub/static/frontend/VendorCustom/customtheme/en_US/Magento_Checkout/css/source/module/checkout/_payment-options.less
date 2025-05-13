@@ -55,20 +55,31 @@
             .action-toggle {
                 .lib-css(color, @checkout-payment-option-title__color);
                 .lib-icon-font(
-                    @icon-down,
-                    @_icon-font-size: @checkout-payment-option-title-icon__font-size,
-                    @_icon-font-line-height: @checkout-payment-option-title-icon__line-height,
-                    @_icon-font-color: @checkout-payment-option-title-icon__color,
-                    @_icon-font-color-hover: @checkout-payment-option-title-icon__hover__color,
-                    @_icon-font-color-active: @checkout-payment-option-title-icon__color,
-                    @_icon-font-margin: @checkout-payment-option-title-icon__margin,
-                    @_icon-font-position: after
+                @icon-down,
+                @_icon-font-size: @checkout-payment-option-title-icon__font-size,
+                @_icon-font-line-height: @checkout-payment-option-title-icon__line-height,
+                @_icon-font-color: @checkout-payment-option-title-icon__color,
+                @_icon-font-color-hover: @checkout-payment-option-title-icon__hover__color,
+                @_icon-font-color-active: @checkout-payment-option-title-icon__color,
+                @_icon-font-margin: @checkout-payment-option-title-icon__margin,
+                @_icon-font-position: after
                 );
             }
         }
 
         .payment-option-content {
             .lib-css(padding, 0 0 @indent__base @checkout-payment-option-content__padding__xl);
+
+            &:extend(.abs-discount-code all);
+          
+            .primary {
+                .action {
+                    &.action-apply {
+                        margin-right: 0;
+                    }
+                }
+            }
+
         }
 
         .payment-option-inner {
@@ -77,7 +88,6 @@
 
         .credit-card-types {
             padding: 0;
-
             .item {
                 display: inline-block;
                 list-style: none;
@@ -146,12 +156,16 @@
 
             > .field.cvv {
                 > .control {
+                    display: inline-block;
                     padding-right: @indent__base;
-                    width: auto;
                 }
             }
 
             .cvv {
+                .label {
+                    display: block;
+                }
+
                 .input-text {
                     width: 55px;
                 }

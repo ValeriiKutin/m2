@@ -11,7 +11,7 @@
 
     //  Newsletter subscription
     .block.newsletter {
-        margin-bottom: @indent__xl;
+        margin-bottom: 20px;
 
         .form.subscribe {
             display: table;
@@ -31,15 +31,17 @@
             .control {
                 .lib-icon-font(
                 @icon-envelope,
-                @_icon-font-size: 35px,
-                @_icon-font-line-height: 33px,
-                @_icon-font-color: @form-element-input-placeholder__color
+                @_icon-font-size: 16px,
+                @_icon-font-line-height: 32px,
+                @_icon-font-color: @form-element-input-placeholder__color,
+                @_icon-font-margin: 0 0 0 8px
                 );
-                display: block;
 
                 &:before {
                     position: absolute;
                 }
+
+                display: block;
             }
         }
 
@@ -66,6 +68,7 @@
             border-bottom-left-radius: 0;
             border-top-left-radius: 0;
             margin-left: -1px;
+            white-space: nowrap;
         }
     }
 }
@@ -79,20 +82,36 @@
         max-width: 44%;
         width: max-content;
 
-        .field {
-            margin-right: 5px;
-
-            &.newsletter {
-                max-width: 220px;
-            }
-
-            .control {
-                width: 100%;
+        .field.newsletter {
+            max-width: 220px;
+        }
+        
+        .form.subscribe {
+            > .field,
+            > .actions {
+                float: left;
             }
         }
+    }
+}
 
-        .action.subscribe {
-            border-radius: 3px;
+//
+//  Mobile
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+    .block {
+        &.newsletter {
+            input {
+                font-size: 12px;
+                padding-left: 30px;
+            }
+
+            .field {
+                .control:before {
+                    font-size: 13px;
+                }
+            }
         }
     }
 }
