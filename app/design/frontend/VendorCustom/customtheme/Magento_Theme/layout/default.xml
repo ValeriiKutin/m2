@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+
+        <move element="top.search" destination="header.panel" after="header.links" />
+
+        <move element="minicart" destination="header.panel" before="header.links" />
+
+        <referenceBlock name="logo">
+            <arguments>
+                <argument name="logo_width" xsi:type="number">128</argument>
+                <argument name="logo_alt" xsi:type="string" translate="true">logo</argument>
+            </arguments>
+        </referenceBlock>
+
+<!--        <referenceContainer name="content">-->
+<!--            <block class="Magento\Framework\View\Element\Template" name="custom.tabs" template="Magento_Theme::custom-tabs.phtml"/>-->
+<!--          <container name="custom.container" htmlTag="h3" htmlClass="custom-text">-->
+<!--              <block name="custom.block" class="Magento\Framework\View\Element\Text">-->
+<!--                  <arguments>-->
+<!--                      <argument name="text" xsi:type="string">Custom Text</argument>-->
+<!--                  </arguments>-->
+<!--              </block>-->
+<!--          </container>-->
+<!--        </referenceContainer>-->
+
+<!--        <container htmlTag="div" htmlClass="custom-container" htmlId="custom_container"/>-->
+<!--     <block class="Magento\Framework\View\Element\Template">-->
+
+<!--     </block>-->
+
+
+    </body>
+</page>
+

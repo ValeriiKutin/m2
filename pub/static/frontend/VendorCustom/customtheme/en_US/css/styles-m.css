@@ -12895,14 +12895,25 @@ fieldset[disabled] .sidebar .block-addbysku .action.remove {
         gap: 42px;
     }
 }*/
-@media only screen and (min-width: 1024px) and (max-width: 1280px) {
-  .page-products .products-grid .product-item {
-    margin-left: 2%;
-    width: calc((100% - 4%) / 5);
+@media only screen and (max-width: 425px) {
+  .product-custom-container-fortitle {
+    margin-top: 20px;
   }
-  .page-products .products-grid .product-item:nth-child(3n + 1) {
-    margin-left: 0;
+}
+@media only screen and (max-width: 375px) {
+  .product-custom-container-fortitle {
+    margin-top: 20px;
   }
+}
+@media only screen and (max-width: 320px) {
+  .product-custom-container-fortitle {
+    margin-top: 20px;
+  }
+}
+.products.list.items.product-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 /**
  * Copyright © Magento, Inc. All rights reserved.

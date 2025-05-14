@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb7d4c71-b304-4061-b0fb-d6ee4e20a237" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/design/frontend/VendorCustom/customtheme/Magento_Catalog/layout/catalog_category_view.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/design/frontend/VendorCustom/customtheme/Magento_Catalog/layout/catalog_product_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/design/frontend/VendorCustom/customtheme/Magento_Catalog/layout/catalog_product_view.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/design/frontend/VendorCustom/customtheme/web/css/source/_custom.less" beforeDir="false" afterPath="$PROJECT_DIR$/app/design/frontend/VendorCustom/customtheme/web/css/source/_custom.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/design/frontend/VendorCustom/customtheme/web/css/source/_extend.less" beforeDir="false" afterPath="$PROJECT_DIR$/app/design/frontend/VendorCustom/customtheme/web/css/source/_extend.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pub/static/frontend/VendorCustom/customtheme/en_US/css/styles-l.css" beforeDir="false" afterPath="$PROJECT_DIR$/pub/static/frontend/VendorCustom/customtheme/en_US/css/styles-l.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pub/static/frontend/VendorCustom/customtheme/en_US/css/styles-l.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/pub/static/frontend/VendorCustom/customtheme/en_US/css/styles-l.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pub/static/frontend/VendorCustom/customtheme/en_US/css/styles-m.css" beforeDir="false" afterPath="$PROJECT_DIR$/pub/static/frontend/VendorCustom/customtheme/en_US/css/styles-m.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pub/static/frontend/VendorCustom/customtheme/en_US/css/styles-m.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/pub/static/frontend/VendorCustom/customtheme/en_US/css/styles-m.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/log/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/var/log/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/log/system.log" beforeDir="false" afterPath="$PROJECT_DIR$/var/log/system.log" afterDir="false" />
-    </list>
+    <list default="true" id="eb7d4c71-b304-4061-b0fb-d6ee4e20a237" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,9 +67,6 @@
     <setting file="file://$PROJECT_DIR$/vendor/magento/theme-frontend-blank/Magento_Theme/layout/default_head_blocks.xml" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/vendor/magento/theme-frontend-blank/Magento_Theme/web/css/source/_module.less" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/vendor/magento/theme-frontend-blank/Magento_Theme/web/css/source/module/_collapsible_navigation.less" root0="SKIP_INSPECTION" />
-  </component>
-  <component name="PackageJsonUpdateNotifier">
-    <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="PhpTemplates">
     <option name="NEW_PHP_FILE_LAST_EXTENSION" value="phtml" />
@@ -716,6 +701,9 @@
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2wiUARorScD6LqpwdY9q9IHEjkA" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -726,7 +714,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/developer/Sites/myproject/app/design/frontend/VendorCustom/customtheme/Magento_Catalog/web/css/source/module",
+    "last_opened_file_path": "/home/developer/Sites/myproject/app/design/frontend/VendorCustom/customtheme",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -734,17 +722,17 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.keymap",
-    "ts.external.directory.path": "/snap/phpstorm/485/plugins/javascript-plugin/jsLanguageServicesImpl/external",
+    "ts.external.directory.path": "/snap/phpstorm/491/plugins/javascript-plugin/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/design/frontend/VendorCustom/customtheme" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/app/etc" />
+      <recent name="$PROJECT_DIR$/lib" />
       <recent name="$PROJECT_DIR$/app/design/frontend/VendorCustom/customtheme/Magento_Catalog/web/css/source/module" />
-      <recent name="$PROJECT_DIR$/app/design/frontend/VendorCustom/customtheme/Magento_Checkout/layout" />
-      <recent name="$PROJECT_DIR$/app/design/frontend/VendorCustom/customtheme/Magento_Checkout/web/template/minicart" />
-      <recent name="$PROJECT_DIR$/app/design/frontend/VendorCustom/customtheme/Vendor_Module" />
-      <recent name="$PROJECT_DIR$/app/code/Vendor/Module" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/design/frontend/VendorCustom/customtheme/Vendor_Module/templates" />
@@ -763,8 +751,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-PS-251.23774.466" />
-        <option value="bundled-php-predefined-a98d8de5180a-aaeaa8632555-com.jetbrains.php.sharedIndexes-PS-251.23774.466" />
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-PS-251.25410.148" />
+        <option value="bundled-php-predefined-a98d8de5180a-c5828cf854d9-com.jetbrains.php.sharedIndexes-PS-251.25410.148" />
       </set>
     </attachedChunks>
   </component>
@@ -784,7 +772,17 @@
       <workItem from="1746774666451" duration="24382000" />
       <workItem from="1747029720599" duration="28105000" />
       <workItem from="1747116256984" duration="671000" />
-      <workItem from="1747120542989" duration="20781000" />
+      <workItem from="1747120542989" duration="22194000" />
+      <workItem from="1747202900087" duration="3320000" />
+      <workItem from="1747206242893" duration="2000" />
+      <workItem from="1747208486780" duration="842000" />
+      <workItem from="1747209582920" duration="74000" />
+      <workItem from="1747209700865" duration="76000" />
+      <workItem from="1747209844144" duration="163000" />
+      <workItem from="1747210387370" duration="636000" />
+      <workItem from="1747211190545" duration="210000" />
+      <workItem from="1747211402674" duration="714000" />
+      <workItem from="1747212153214" duration="6195000" />
     </task>
     <servers />
   </component>

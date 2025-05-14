@@ -1,0 +1,40 @@
+<div class="product data items"
+     data-mage-init='{"mage/tabs": {
+         "openedState": "active",
+         "animate": {"duration": 200},
+         "active": 1,
+         "disabled": [2],
+         "disabledState": "disabled"
+     },
+         "js/custom-modal": {}
+     }'>
+
+    <div class="item title" data-role="collapsible">
+        <a class="switch" data-toggle="trigger" href="#tab-1">Перший таб</a>
+    </div>
+    <div id="tab-1" class="item content" data-role="content">
+       <p>txt</p>
+    </div>
+
+    <div class="item title" data-role="collapsible">
+        <a class="switch" data-toggle="trigger" href="#tab-2">Другий таб</a>
+    </div>
+    <div id="tab-2" class="item content" data-role="content">
+        <p>Контент другого табу</p>
+        <button id="open-modal" type="button" class="action primary">
+            <span><?= $block->escapeHtml(__('Відкрити модалку')) ?></span>
+        </button>
+
+        <div id="custom-modal" style="display:none;">
+            <div class="modal-inner-content">
+                <div class="custom-slider">
+                    <div><img src="<?= $block->getViewFileUrl('images/slide1.jpg') ?>" alt="Slide 1"></div>
+                    <div><img src="<?= $block->getViewFileUrl('images/slide2.jpg') ?>" alt="Slide 2"></div>
+                    <div><img src="<?= $block->getViewFileUrl('images/slide3.jpg') ?>" alt="Slide 3"></div>
+                    <div><img src="<?= $block->getViewFileUrl('images/slide4.jpg') ?>" alt="Slide 4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

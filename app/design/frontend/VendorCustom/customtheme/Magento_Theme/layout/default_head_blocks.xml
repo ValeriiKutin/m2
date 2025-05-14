@@ -1,0 +1,11 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <link rel="icon" type="image/png" src="Magento_Theme::favicon/favicon-96x96.png" sizes="96x96" />
+        <css src="css/slick.css"/>
+        <css src="css/slick-theme.css"/>
+        <script src="js/custom.js"/>
+        <script src="js/slider-init.js"/>
+
+    </head>
+</page>
+
