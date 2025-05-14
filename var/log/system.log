@@ -14702,3 +14702,6 @@ Did you mean one of these?
 [2025-05-14T09:48:42.525221+00:00] main.ERROR: Braintree\Configuration::merchantId needs to be set (or accessToken needs to be passed to Braintree\Gateway). [] []
 [2025-05-14T09:48:43.510255+00:00] main.ERROR: Unable to resolve the source file for 'frontend/VendorCustom/customtheme/en_US/underscore-umd.js.map' [] []
 [2025-05-14T09:48:43.510798+00:00] main.CRITICAL: Unable to resolve the source file for 'frontend/VendorCustom/customtheme/en_US/underscore-umd.js.map' [] []
+[2025-05-14T11:15:24.455987+00:00] main.ERROR: Braintree\Configuration::merchantId needs to be set (or accessToken needs to be passed to Braintree\Gateway). [] []
+[2025-05-14T11:15:25.568534+00:00] main.ERROR: Unable to resolve the source file for 'frontend/VendorCustom/customtheme/en_US/underscore-umd.js.map' [] []
+[2025-05-14T11:15:25.569198+00:00] main.CRITICAL: Unable to resolve the source file for 'frontend/VendorCustom/customtheme/en_US/underscore-umd.js.map' [] []
