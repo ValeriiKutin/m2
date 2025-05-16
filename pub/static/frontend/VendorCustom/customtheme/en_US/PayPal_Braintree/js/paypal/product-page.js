@@ -1,1 +1,0 @@
-/var/www/html/vendor/paypal/module-braintree-core/view/frontend/web/js/paypal/product-page.js

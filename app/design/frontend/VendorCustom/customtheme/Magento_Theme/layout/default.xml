@@ -2,35 +2,98 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
+            <move element="minicart" destination="header.panel" after="-" />
 
-        <move element="top.search" destination="header.panel" after="header.links" />
+            <referenceBlock name="logo">
+                <arguments>
+                    <argument name="logo_width" xsi:type="number">400</argument>
+                    <argument name="logo_alt" xsi:type="string" translate="true">logo</argument>
+                </arguments>
+            </referenceBlock>
+            <!--Header-->
+            <referenceContainer name="header.panel.wrapper">
+                <container name="custom.header.container" htmlTag="div" htmlClass="custom-header-container" before="-">
+                    <container name="custom.header.middle.container" htmlTag="div" htmlClass="custom-header-middle-container" after="-"/>
+                    <container name="custom.header.container.for.logo" htmlTag="div" htmlClass="custom-header-container-for-logo" before="header.panel">
+                        <container name="custom.header.container.left" htmlTag="div" htmlClass="custom-header-container-left" before="-">
+                            <block class="Magento\Framework\View\Element\Template" name="custom.btn.catalog" template="Magento_Theme::btn-header/custom-btn-catalog.phtml"/>
+                            <block class="Magento\Framework\View\Element\Template" name="navigation.sections" before="-" template="Magento_Theme::html/sections.phtml">
+                                <arguments>
+                                    <argument name="group_name" xsi:type="string">navigation-sections</argument>
+                                    <argument name="group_css" xsi:type="string">nav-sections</argument>
+                                </arguments>
+                                <block class="Magento\Framework\View\Element\Template" name="store.menu" group="navigation-sections" template="Magento_Theme::html/container.phtml">
+                                    <arguments>
+                                        <argument name="title" translate="true" xsi:type="string">Menu</argument>
+                                    </arguments>
+                                    <block class="Magento\Theme\Block\Html\Topmenu" name="catalog.topnav" template="Magento_Theme::html/topmenu.phtml" ttl="3600" before="-"/>
+                                </block>
+                                <block class="Magento\Framework\View\Element\Text" name="store.links" group="navigation-sections">
+                                    <arguments>
+                                        <argument name="title" translate="true" xsi:type="string">Account</argument>
+                                        <argument name="use_force" xsi:type="boolean">true</argument>
+                                        <argument name="text" xsi:type="string"><![CDATA[<!-- Account links -->]]></argument>
+                                    </arguments>
+                                </block>
+                                <block class="Magento\Framework\View\Element\Template" name="store.settings" group="navigation-sections" template="Magento_Theme::html/container.phtml">
+                                    <arguments>
+                                        <argument name="title" translate="true" xsi:type="string">Settings</argument>
+                                    </arguments>
+                                    <block class="Magento\Store\Block\Switcher" name="store.settings.language" template="Magento_Store::switch/languages.phtml">
+                                        <arguments>
+                                            <argument name="id_modifier" xsi:type="string">nav</argument>
+                                            <argument name="view_model" xsi:type="object">Magento\Store\ViewModel\SwitcherUrlProvider</argument>
+                                        </arguments>
+                                    </block>
+                                    <block class="Magento\Directory\Block\Currency" name="store.settings.currency" template="Magento_Directory::currency.phtml">
+                                        <arguments>
+                                            <argument name="id_modifier" xsi:type="string">nav</argument>
+                                        </arguments>
+                                    </block>
+                                </block>
+                            </block>
+                        </container>
+                    </container>
+                    <container name="custom.header.left.container" htmlTag="div" htmlClass="custom-header-left-container" after="-"/>
+                </container>
+            </referenceContainer>
 
-        <move element="minicart" destination="header.panel" before="header.links" />
+            <referenceContainer name="custom.header.middle.container">
+                <container name="custom.header.middle.wrapper" htmlTag="div" htmlClass="custom-header-middle-wrapper" before="top.search">
+                    <block class="Magento\Framework\View\Element\Template" name="middle.top.links" template="Magento_Theme::middle-top-links/middle_top_links.phtml"/>
 
-        <referenceBlock name="logo">
-            <arguments>
-                <argument name="logo_width" xsi:type="number">128</argument>
-                <argument name="logo_alt" xsi:type="string" translate="true">logo</argument>
-            </arguments>
-        </referenceBlock>
+                    <!-- КОПІЯ  "Contact Us" -->
+                    <block class="Magento\Framework\View\Element\Html\Link\Current" ifconfig="contact/contact/enabled" name="contact-us-link-header">
+                        <arguments>
+                            <argument name="label" xsi:type="string" translate="true">Контакти</argument>
+                            <argument name="path" xsi:type="string">contact</argument>
+                        </arguments>
+                    </block>
+                    <!-- КОПІЯ  "Contact Us" -->
+                </container>
+            </referenceContainer>
 
-<!--        <referenceContainer name="content">-->
-<!--            <block class="Magento\Framework\View\Element\Template" name="custom.tabs" template="Magento_Theme::custom-tabs.phtml"/>-->
-<!--          <container name="custom.container" htmlTag="h3" htmlClass="custom-text">-->
-<!--              <block name="custom.block" class="Magento\Framework\View\Element\Text">-->
-<!--                  <arguments>-->
-<!--                      <argument name="text" xsi:type="string">Custom Text</argument>-->
-<!--                  </arguments>-->
-<!--              </block>-->
-<!--          </container>-->
-<!--        </referenceContainer>-->
+            <!--custom-header-container-->
+            <block class="Magento\Framework\View\Element\Template" name="custom.phone.number" template="Magento_Theme::phone/phone.phtml"/>
+            <move element="header.panel" destination="custom.header.container" after="-"/>
+            <move element="header-wrapper" destination="custom.header.container.left" before="-"/>
+            <move element="custom.phone.number" destination="custom.header.container.for.logo" after="custom.header.container.for.logo"/>
+            <move element="compare-link-wrapper" destination="header.panel" after="-"/>
+            <move element="header.panel" destination="custom.header.left.container" after="-"/>
 
-<!--        <container htmlTag="div" htmlClass="custom-container" htmlId="custom_container"/>-->
-<!--     <block class="Magento\Framework\View\Element\Template">-->
-
-<!--     </block>-->
+            <!--custom-header-container-->
 
 
+                <!--custom.header.middle.container-->
+                <move element="top.search" destination="custom.header.middle.container" after="-" />
+                <!--custom.header.middle.container-->
+            <!--Header-->
+
+            <referenceContainer name="custom.header.left.container">
+                <block class="Vendor\AuthLinks\Block\Links" name="custom.auth.links" template="Magento_Theme::auth/auth-links.phtml" before="-"/>
+            </referenceContainer>
+
+            <referenceBlock name="top.links" remove="true"/>
     </body>
 </page>
 

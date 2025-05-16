@@ -1,24 +1,167 @@
-& when (@media-common = true){
-    body{
-        background: transparent; //background: tomato;
+.custom-header-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    max-width: 1560px;
+    margin: 0 auto;
+    padding: 0 21px;
+}
+.page-header {
+    .panel.wrapper{
+        background-color: #232F3E !important;
+        .custom-header-container{
+            .panel.header{
+                width: 262px;
+                margin: 0;
+            }
+        }
     }
 }
 
-//Desktop
-.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+.catalog-btn {
+    font-family: Arial !important;
+    width: 280px;
+    height: 60px;
+    background: #FF6600;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 0;
 
-    body{
-        background: transparent; //background: purple;
+    .burger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        width: 24px;
+        height: 18px;
+        position: relative;
+
+        span {
+            display: block;
+            height: 2px;
+            background: #fff;
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+    }
+
+    .btn-text {
+        color: #fff;
+        font-family: Arial;
+        font-weight: 400;
+        font-size: 20px;
+    }
+}
+.page-wrapper{
+}
+.sections.nav-sections{
+    display: none;
+    pointer-events: none;
+    background: transparent;
+    margin-top: -1px;
+    position: absolute;
+    top: 147px;
+    .navigation{
+        color: #fff;
+        .ui-menu.ui-widget.ui-widget-content{
+            display: flex;
+            flex-direction: column;
+            background: #FF6600;
+            li{
+                a{
+                    color: #fff;
+                }
+            }
+        }
+
+    }
+}
+.sidebar.sidebar-main{
+    .nav.items{
+        padding: 0;
+        .nav.item{
+            list-style: none;
+
+            &.current{
+                background: #C7C7C7;
+                strong{
+                    border-color: transparent;
+                }
+            }
+            .delimiter{
+                display: none;
+            }
+        }
+
+    }
+}
+.custom-header-container-for-logo{
+    display: flex;
+    align-items: center;
+    .custom-header-container-left{
+        position: relative;
+        .header.content{
+            width: 271px;
+            .logo{
+                max-width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+.custom-header-middle-wrapper{
+    li{
+        list-style: none;
+        a{
+            color: #fff;
+            font-family: Arial;
+            font-size: 14px;
+            line-height: 42px;
+        }
+    }
+}
+.custom-header-middle-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 43.5%;
+    .custom-header-middle-wrapper{
+        display: flex;
+        align-items: center;
+        gap: 65px;
+    }
+    .block.block-search{
+        padding-left: 0;
+        .block.block-content{
+            .form.minisearch{
+                .field.search{
+                    .control{
+                        .input-text{
+                            width: 678px;
+                            height: 47px;
+                            background: transparent;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
     }
 
 }
+#maincontent{
+    max-width: 1600px;
+}
 
-
-//Mobile
-.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
-
-    body{
-        background: transparent; //background: green;
-    }
-
+.account.page-layout-2columns-left .sidebar-main, .account.page-layout-2columns-left .sidebar-additional{
+    width: 18.3% !important;
+}
+.sections.nav-sections .navigation{
+    width: 700px;
 }

@@ -1,5 +1,4 @@
 <?php
-
 use Magento\Framework\Component\ComponentRegistrar;
 
-ComponentRegistrar::register(ComponentRegistrar::MODULE, 'Vendor_Module', __DIR__);
+ComponentRegistrar::register(ComponentRegistrar::MODULE, 'Vendor_AuthLinks', __DIR__);

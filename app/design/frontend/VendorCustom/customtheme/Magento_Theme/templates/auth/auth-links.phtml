@@ -1,0 +1,5 @@
+<?php if ($block->isLoggedIn()): ?>
+    <li><a href="<?= $block->getLogoutUrl() ?>"><?= __('Sign Out') ?></a></li>
+<?php else: ?>
+    <li><a href="<?= $block->getLoginUrl() ?>"><?= __('Sign In') ?></a></li>
+<?php endif; ?>

@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'textablack';
+    src: url(texta-black-webfont.woff2) format("woff2"),
+     url(Texta-Black.woff) format("woff"),
+     url(Texta-Black.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'textaregular';
+    src: url(texta_regular-webfont.woff2) format("woff2"),
+    url(Texta-Regular.woff) format("woff"),
+    url(Texta-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TextaHeavy';
+    src: url(Texta-Heavy.woff2) format("woff2"),
+    url(Texta-Heavy.woff) format("woff"),
+    url(Texta-Heavy.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'textitalic';
+    src: url(Texta-It.woff2) format("woff2"),
+         url(Texta-It.woff) format("woff"),
+         url(Texta-It.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'textabold';
+    src: url(texta_bold-webfont.woff2) format("woff2"),
+         url(Texta-Bold.woff) format("woff"),
+         url(Texta-Bold.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'textamedium';
+    src: url(texta_medium-webfont.woff2) format("woff2"),
+         url(Texta-Medium.woff) format("woff"),
+         url(Texta-Medium.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}

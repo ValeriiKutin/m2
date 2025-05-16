@@ -107,6 +107,26 @@ $reviewRenderer = $block->getLayout()->createBlock(
         <?php else: ?>
             <td class="col price" data-th="<?= $block->escapeHtml(__('Price')) ?>">
                 <?= $block->getUnitPriceHtml($_item) ?>
+                <?php
+                $tierPrices = $product->getTierPrice();
+                //  dump($product->getTierPrice());
+                if (!empty($tierPrices)):
+                    ?>
+                    <div class="tier-prices">
+                        <ul>
+                            <?php foreach ($tierPrices as $tierPrice): ?>
+                                <li class='tier-price-list'>
+                                    <?php
+                                    $qty = (int) $tierPrice['price_qty'];
+                                    $price = $tierPrice['price'];
+                                    $percentage = $tierPrice['percentage_value']
+                                    ?>
+                                    <?= $block->escapeHtml(__("BUY %1 FOR %2 EACH AND SAVE %3%", $qty, $price, $percentage)) ?>
+                                </li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </div>
+                <?php endif; ?>
             </td>
         <?php endif; ?>
         <td class="col qty" data-th="<?= $block->escapeHtml(__('Qty')) ?>">

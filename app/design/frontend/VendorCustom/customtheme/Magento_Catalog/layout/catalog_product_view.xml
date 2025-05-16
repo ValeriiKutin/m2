@@ -31,7 +31,7 @@
 
 
         <!--в новй контейнер product.custom.container.second вставив qty.phtml з початку і після нього product.price.final
-            дістав qty з html і вставив в phtml
+            дістав qty з html і вставив в phtml (код з низу для того щоб ціна стояла поруч з qty)
         -->
         <referenceBlock name="product.info.form.options">
             <container name="product.custom.container.second" htmlTag="div" htmlClass="product-custom-container-second" after="product.info.options.wrapper"/>
@@ -40,8 +40,8 @@
         <referenceContainer name="product.custom.container.second">
             <block class="Magento\Catalog\Block\Product\View" name="product.info.qty" template="Magento_Catalog::product/view/qty.phtml"/>
         </referenceContainer>
-        <move element="product.price.final" destination="product.custom.container.second" after="product.info.qty"/>
-        <!---->
+        <!-- <move element="product.price.final" destination="product.custom.container.second" after="product.info.qty"/>  -->
+     
 
 
 
