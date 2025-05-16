@@ -88,12 +88,19 @@
                 <move element="top.search" destination="custom.header.middle.container" after="-" />
                 <!--custom.header.middle.container-->
             <!--Header-->
-
+            <!--Is Login links-->
             <referenceContainer name="custom.header.left.container">
                 <block class="Vendor\AuthLinks\Block\Links" name="custom.auth.links" template="Magento_Theme::auth/auth-links.phtml" before="-"/>
             </referenceContainer>
+            <!--Is Login links-->
 
-            <referenceBlock name="top.links" remove="true"/>
+
+
+
+            <!--Kill top.links-->
+            <referenceContainer name="header.links" remove="true"/>
+            <!--Kill top.links-->
+
     </body>
 </page>
 
