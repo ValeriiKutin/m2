@@ -54,22 +54,35 @@
                             </block>
                         </container>
                     </container>
-                    <container name="custom.header.left.container" htmlTag="div" htmlClass="custom-header-left-container" after="-"/>
+               <!--     <container name="custom.header.onemore.container" htmlTag="div" htmlClass="custom-header-onemore-container" after="custom.header.middle.container">
+                        <container name="custom.header.onemore.container.for.top.links" htmlTag="div" htmlClass="custom-header-onemore-container-for-top-links" before="-">
+                            <block class="Magento\Framework\View\Element\Template" name="custom.top.links.block" template="Magento_Theme::custom-top-links-block/custom-top-links-block.phtml"/>
+                        </container>
+                        <container name="custom.header.left.container" htmlTag="div" htmlClass="custom-header-left-container" after="-"/>
+                    </container>-->
                 </container>
             </referenceContainer>
 
             <referenceContainer name="custom.header.middle.container">
                 <container name="custom.header.middle.wrapper" htmlTag="div" htmlClass="custom-header-middle-wrapper" before="top.search">
-                    <block class="Magento\Framework\View\Element\Template" name="middle.top.links" template="Magento_Theme::middle-top-links/middle_top_links.phtml"/>
-
-                    <!-- КОПІЯ  "Contact Us" -->
-                    <block class="Magento\Framework\View\Element\Html\Link\Current" ifconfig="contact/contact/enabled" name="contact-us-link-header">
-                        <arguments>
-                            <argument name="label" xsi:type="string" translate="true">Контакти</argument>
-                            <argument name="path" xsi:type="string">contact</argument>
-                        </arguments>
-                    </block>
-                    <!-- КОПІЯ  "Contact Us" -->
+                    <container name="custom.header.onemore.container.for.top.links" htmlTag="div" htmlClass="custom-header-onemore-container-for-top-links" after="-">
+                        <block class="Magento\Framework\View\Element\Template" name="custom.top.links.block" template="Magento_Theme::custom-top-links-block/custom-top-links-block.phtml"/>
+                        <!--<container name="custom.header.left.container" htmlTag="div" htmlClass="custom-header-left-container" after="-"/>-->
+                    </container>
+                    <container name="custom.header.top.links.container" htmlTag="div" htmlClass="custom-header-top-links-container">
+                        <block class="Magento\Framework\View\Element\Template" name="middle.top.links" template="Magento_Theme::middle-top-links/middle_top_links.phtml"/>
+                            <!-- КОПІЯ  "Contact Us" -->
+                        <block class="Magento\Framework\View\Element\Html\Link\Current" ifconfig="contact/contact/enabled" name="contact-us-link-header">
+                            <arguments>
+                                <argument name="label" xsi:type="string" translate="true">Контакти</argument>
+                                <argument name="path" xsi:type="string">contact</argument>
+                            </arguments>
+                        </block>
+                            <!-- КОПІЯ  "Contact Us" -->
+                    </container>
+                </container>
+                <container name="custom.header.middle.wrapper.second" htmlTag="div" htmlClass="custom-header-middle-wrapper-second">
+                    <container name="custom.header.left.container" htmlTag="div" htmlClass="custom-header-left-container" after="-"/>
                 </container>
             </referenceContainer>
 
@@ -85,7 +98,7 @@
 
 
                 <!--custom.header.middle.container-->
-                <move element="top.search" destination="custom.header.middle.container" after="-" />
+                <move element="top.search" destination="custom.header.middle.wrapper.second" before="-" />
                 <!--custom.header.middle.container-->
             <!--Header-->
             <!--Is Login links-->
@@ -94,13 +107,13 @@
             </referenceContainer>
             <!--Is Login links-->
 
-
-
-
             <!--Kill top.links-->
-            <referenceContainer name="header.links" remove="true"/>
+                <referenceContainer name="header.links" remove="true"/>
             <!--Kill top.links-->
-
+            <referenceBlock name="header.panel">
+                <block class="Magento\Framework\View\Element\Template" name="favorite.link" template="Magento_Theme::favorite-link/favorite-link.phtml"/>
+            </referenceBlock>
+            <referenceBlock name="div.sidebar.additional" remove="true"/>
     </body>
 </page>
 

@@ -1,5 +1,17 @@
-<?php if ($block->isLoggedIn()): ?>
-    <li><a href="<?= $block->getLogoutUrl() ?>"><?= __('Sign Out') ?></a></li>
-<?php else: ?>
-    <li><a href="<?= $block->getLoginUrl() ?>"><?= __('Sign In') ?></a></li>
-<?php endif; ?>
+<?php
+$userImgUrl = $block->getViewFileUrl('Magento_Theme::images/user-img-header.png');
+?>
+
+<div class="box-user-img-header">
+    <?php if ($block->isLoggedIn()): ?>
+        <a href="<?= $block->getUrl('customer/account') ?>">
+            <img src="<?= $userImgUrl ?>" alt="user-img-header">
+        </a>
+        <a class="auth-link" href="<?= $block->getLogoutUrl() ?>"><?= __('Вийти') ?></a>
+    <?php else: ?>
+        <a href="<?= $block->getUrl('customer/account/login') ?>">
+            <img src="<?= $userImgUrl ?>" alt="user-img-header">
+        </a>
+        <a class="auth-link" href="<?= $block->getLoginUrl() ?>"><?= __('Увійти') ?></a>
+    <?php endif; ?>
+</div>

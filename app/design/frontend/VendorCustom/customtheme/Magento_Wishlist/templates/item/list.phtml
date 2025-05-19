@@ -1,0 +1,40 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+?>
+<?php
+/** @var \Magento\Wishlist\Block\Customer\Wishlist\Items $block */
+$columns = $block->getColumns();
+?>
+
+<div class="products-grid wishlist">
+    <?php if (count($block->getItems())) : ?>
+    <ol class="product-items">
+        <?php foreach ($block->getItems() as $item) : ?>
+            <li data-row="product-item" class="product-item" id="item_<?= $block->escapeHtmlAttr($item->getId()) ?>">
+                <div class="product-item-info" data-container="product-grid">
+                    <?php foreach ($columns as $column) : ?>
+                        <?= $column->setItem($item)->toHtml();?>
+                    <?php endforeach; ?>
+                </div>
+            </li>
+        <?php endforeach; ?>
+    </ol>
+    <div class="show-more-container">
+        <img src="<?= $block->getViewFileUrl('Magento_Wishlist::images/show-more-icon.png') ?>" alt="<?= $block->escapeHtmlAttr(__('show more')) ?>" />
+        <p>Показати ще 48 заказів</p>
+    </div>
+    <?php else : ?>
+        <div class="message info empty">
+            <span><?= $block->escapeHtml(__('This Wish List has no Items')) ?></span>
+        </div>
+    <?php endif; ?>
+</div>
+
+<?php foreach ($columns as $column) : ?>
+    <?= $column->getAdditionalHtml() ?>
+<?php endforeach; ?>
+
+<?= $block->getChildHtml('wishlist.item.pricecart.container'); ?>

@@ -12,10 +12,20 @@
         background-color: #232F3E !important;
         .custom-header-container{
             .panel.header{
-                width: 262px;
+                width: 307px;
+                padding: 0;
                 margin: 0;
+                display: flex;
+                align-items: center;
+                gap: 50px;
                 .header.links{
                     //display: none;
+                }
+                .favorite-link{
+                    img{
+                        position: relative;
+                        top: -5px;
+                    }
                 }
             }
         }
@@ -119,6 +129,8 @@
     }
 }
 .custom-header-middle-wrapper{
+    width: 100%;
+    justify-content: space-between;
     li{
         list-style: none;
         a{
@@ -133,7 +145,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 43.5%;
+    width: 70%;
     .custom-header-middle-wrapper{
         display: flex;
         align-items: center;
@@ -167,4 +179,57 @@
 }
 .sections.nav-sections .navigation{
     width: 700px;
+}
+.favorite-link{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    p{
+        color: #fff;
+    }
+}
+.minicart-wrapper{
+    margin-left: 0 !important;
+    position: relative;
+    top: -3px;
+}
+.other-top-header-info{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .money-info {
+        margin-right: 35px;
+        display: flex;
+        align-items: center;
+        gap: 17px;
+        p{
+            margin: 0;
+        }
+    }
+    .language-info{
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        .line-info{
+            display: inline-block;
+            height: 16px;
+            width: 1px;
+            background: #fff;
+        }
+        .eng-icon:hover,
+        .ua-icon:hover{
+            color: #FF6600;
+            cursor: pointer;
+        }
+    }
+}
+.custom-header-onemore-container{
+    position: relative;
+    left: 42px;
+}
+.custom-header-middle-wrapper-second{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }

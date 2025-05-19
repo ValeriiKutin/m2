@@ -1,0 +1,136 @@
+@import '_custom-variables-wishlist.less';
+/*
+@screen__laptop_l: 1440px;
+@screen__laptop_m: 1024px;
+@screen__tablet: 768px;
+@screen__mobile_l: 425px;
+@screen__mobile_m: 375px;
+@screen__mobile_s: 320px;
+*/
+
+
+@media (max-width: @screen__laptop_l) {
+  .custom-header-container{
+      .custom-header-middle-container{
+          .custom-header-middle-wrapper-second{
+              flex-direction: column;
+              width: 41%;
+              .block.block-search{
+                  .block.block-content{
+                        .form.minisearch{
+                            .field.search{
+                                .control{
+                                    .input-text{
+                                        width: 500px;
+                                    }
+                                }
+                            }
+                        }
+                  }
+              }
+              .custom-header-left-container{
+                  left: 129px;
+              }
+          }
+      }
+  }
+}
+@media (max-width: @screen__laptop_m) {
+        .custom-header-container{
+            .custom-header-middle-container{
+                width: 52%;
+                .custom-header-middle-wrapper-second{
+                    flex-direction: column;
+                    width: 41%;
+                    .block.block-search{
+                        left: 69px;
+                        .block.block-content{
+                            .form.minisearch{
+                                .field.search{
+                                    .control{
+                                        .input-text{
+                                            width: 360px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .custom-header-left-container{
+                        left: 129px;
+                    }
+                }
+                .custom-header-middle-wrapper{
+                    .custom-header-top-links-container{
+                        gap: 0;
+                    }
+                    .custom-header-onemore-container-for-top-links{
+                        .other-top-header-info{
+                            flex-wrap: wrap;
+                            justify-content: flex-start;
+                        }
+                    }
+                }
+            }
+        }
+    .sidebar.sidebar-main{
+        .custom-sidebarmenu-box{
+            .wrapper-user-info{
+                flex-direction: column;
+                margin-left: 0;
+            }
+        }
+    }
+}
+@media (max-width: @screen__tablet) {
+    .custom-header-container{
+        padding: 15px 21px;
+        .custom-header-container-for-logo{
+            flex-direction: column;
+        }
+        .custom-header-middle-container{
+            .custom-header-middle-wrapper{
+                .custom-header-top-links-container{
+                    flex-wrap: wrap;
+                }
+                .custom-header-onemore-container-for-top-links{
+                    .other-top-header-info{
+                    .money-info{
+                        display: none;
+                    }
+                    }
+                }
+            }
+            .custom-header-middle-wrapper-second{
+                .block.block-search{
+                    left: 90px;
+                    .block.block-content{
+                        .form.minisearch{
+                            .field.search{
+                                .control{
+                                    .input-text{
+                                        width: 255px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .custom-header-left-container{
+                    .panel.header{
+                        gap: 19px;
+                    }
+                }
+            }
+        }
+    }
+    .sidebar.sidebar-main{
+        .custom-sidebarmenu-box{
+            .wrapper-user-info{
+                div{
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}

@@ -1,6 +1,21 @@
-<?xml version="1.0"?>
-<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+
     <body>
+<!--        <referenceBlock name="customer.wishlist.items">
+            <container name="wishlist.item.pricecart.container"
+                       htmlTag="div"
+                       htmlClass="wishlist-item-pricecart-container" before="-"/>
+        </referenceBlock>-->
+
+       <!-- <move element="customer.wishlist.item.price" destination="wishlist.item.pricecart.container" before="-"/>
+        <move element="customer.wishlist.item.inner" destination="wishlist.item.pricecart.container" after="-"/>-->
+        <referenceBlock name="customer.wishlist.item.comment" remove="true"/>
+        <referenceBlock name="customer.wishlist.item.edit" remove="true"/>
+        <referenceBlock name="customer.wishlist.item.review" remove="true"/>
+        <referenceBlock name="customer.wishlist.button.update" remove="true"/>
 
     </body>
 </page>
+
+

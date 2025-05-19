@@ -1,0 +1,25 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+/** @var $block Magento\Framework\View\Element\Template */
+$compareImgUrl = $block->getViewFileUrl('Magento_Catalog::images/compare-icon.png');
+?>
+<li class="item link compare" data-bind="scope: 'compareProducts'" data-role="compare-products-link">
+    <a class="action compare no-display" title="<?= $block->escapeHtmlAttr(__('Compare Products')) ?>"
+       data-bind="attr: {'href': compareProducts().listUrl}, css: {'no-display': !compareProducts().count}"
+    >
+
+        <!--<span class="counter qty" data-bind="text: compareProducts().countCaption"></span>-->
+        <div class="comapre-box-icon">
+            <img src="<?= $compareImgUrl ?>" alt="user-img-header">
+            <?= $block->escapeHtml(__('Порівняти')) ?>
+        </div>
+
+    </a>
+</li>
+<script type="text/x-magento-init">
+    {"[data-role=compare-products-link]": {"Magento_Ui/js/core/app": <?= /* @noEscape */ $block->getJsLayout() ?>}}
+</script>
