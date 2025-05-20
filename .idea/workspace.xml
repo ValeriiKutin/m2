@@ -5,47 +5,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb7d4c71-b304-4061-b0fb-d6ee4e20a237" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/generated/code/Magento/Customer/Controller/Account/Index/Interceptor.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/generated/code/Magento/Directory/Model/ResourceModel/Country/CollectionFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/generated/code/Magento/Review/Model/ResourceModel/Review/Product/Collection/Interceptor.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/generated/code/Magento/Review/Model/ResourceModel/Review/Product/CollectionFactory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/design/frontend/VendorCustom/customtheme/Magento_Catalog/web/css/source/_extend.less" beforeDir="false" afterPath="$PROJECT_DIR$/app/design/frontend/VendorCustom/customtheme/Magento_Catalog/web/css/source/_extend.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/design/frontend/VendorCustom/customtheme.zip" beforeDir="false" afterPath="$PROJECT_DIR$/app/design/frontend/VendorCustom/customtheme.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/design/frontend/VendorCustom/customtheme/Magento_Theme/layout/default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/design/frontend/VendorCustom/customtheme/Magento_Theme/layout/default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/design/frontend/VendorCustom/customtheme/Magento_Theme/templates/auth/auth-links.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/app/design/frontend/VendorCustom/customtheme/Magento_Theme/templates/auth/auth-links.phtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/design/frontend/VendorCustom/customtheme/Magento_Theme/web/css/source/_extend.less" beforeDir="false" afterPath="$PROJECT_DIR$/app/design/frontend/VendorCustom/customtheme/Magento_Theme/web/css/source/_extend.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/design/frontend/VendorCustom/customtheme/Magento_Wishlist/layout/wishlist_index_index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/design/frontend/VendorCustom/customtheme/Magento_Wishlist/layout/wishlist_index_index.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/design/frontend/VendorCustom/customtheme/templates/block_one.phtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/design/frontend/VendorCustom/customtheme/templates/block_two.phtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/design/frontend/VendorCustom/customtheme/Magento_Theme/templates/custom-top-links-block/custom-top-links-block.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/app/design/frontend/VendorCustom/customtheme/Magento_Theme/templates/custom-top-links-block/custom-top-links-block.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/design/frontend/VendorCustom/customtheme/Magento_Theme/templates/middle-top-links/middle_top_links.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/app/design/frontend/VendorCustom/customtheme/Magento_Theme/templates/middle-top-links/middle_top_links.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/design/frontend/VendorCustom/customtheme/Magento_Wishlist/web/css/source/_extend.less" beforeDir="false" afterPath="$PROJECT_DIR$/app/design/frontend/VendorCustom/customtheme/Magento_Wishlist/web/css/source/_extend.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/design/frontend/VendorCustom/customtheme/web/css/source/_extend.less" beforeDir="false" afterPath="$PROJECT_DIR$/app/design/frontend/VendorCustom/customtheme/web/css/source/_extend.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generated/code/Magento/Catalog/Controller/Product/Compare/Add/Interceptor.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/generated/code/Magento/Catalog/Model/Product/Compare/ItemFactory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/generated/code/Magento/Catalog/Ui/DataProvider/Product/ProductCollectionFactory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/generated/code/Magento/Config/Model/Config/Backend/Encrypted/Interceptor.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/generated/code/Magento/Config/Model/ResourceModel/Config/Data/Collection/Interceptor.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/generated/code/Magento/Eav/Model/Adminhtml/System/Config/Source/InputtypeFactory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/generated/code/Magento/Eav/Model/ResourceModel/Entity/Type/Collection/Interceptor.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/generated/code/Magento/Framework/App/Config/InitialConfigSource/Proxy.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/generated/code/Magento/Framework/Config/CompositeFileIteratorFactory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/generated/code/Magento/Framework/View/Design/Theme/CustomizationInterfaceFactory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/generated/code/Magento/PageBuilder/Model/Dom/HtmlDocumentFactory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/generated/code/Magento/Paypal/Model/PayflowlinkFactory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/generated/code/Magento/ServicesConnector/Model/Config/Backend/KeyEncrypted/Interceptor.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/generated/code/Magento/Swatches/Block/Adminhtml/Product/Attribute/Edit/FormFactory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/generated/code/Magento/Theme/Model/ResourceModel/Theme/Collection/Proxy.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/generated/code/Magento/Ui/Config/Argument/Parser/Composite/Proxy.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/generated/code/Magento/Ui/Config/ConverterInterface/Proxy.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pub/static/frontend/VendorCustom/customtheme/en_US/Magento_Catalog/js/product/list/toolbar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pub/static/frontend/VendorCustom/customtheme/en_US/Magento_Catalog/js/related-products.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pub/static/frontend/VendorCustom/customtheme/en_US/Magento_Checkout/js/model/full-screen-loader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pub/static/frontend/VendorCustom/customtheme/en_US/Magento_Sales/js/view/last-ordered-items.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pub/static/frontend/VendorCustom/customtheme/en_US/Magento_Wishlist/js/view/wishlist.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pub/static/frontend/VendorCustom/customtheme/en_US/PayPal_Braintree/js/actions/create-payment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pub/static/frontend/VendorCustom/customtheme/en_US/PayPal_Braintree/js/actions/get-country-directory.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pub/static/frontend/VendorCustom/customtheme/en_US/PayPal_Braintree/js/actions/get-shipping-methods.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pub/static/frontend/VendorCustom/customtheme/en_US/PayPal_Braintree/js/actions/set-shipping-information.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pub/static/frontend/VendorCustom/customtheme/en_US/PayPal_Braintree/js/actions/update-totals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pub/static/frontend/VendorCustom/customtheme/en_US/PayPal_Braintree/js/form-builder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pub/static/frontend/VendorCustom/customtheme/en_US/PayPal_Braintree/js/helper/addresses/map-paypal-payment-information.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pub/static/frontend/VendorCustom/customtheme/en_US/PayPal_Braintree/js/helper/addresses/map-paypal-shipping-information.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pub/static/frontend/VendorCustom/customtheme/en_US/PayPal_Braintree/js/helper/check-guest-checkout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pub/static/frontend/VendorCustom/customtheme/en_US/PayPal_Braintree/js/helper/get-api-url.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pub/static/frontend/VendorCustom/customtheme/en_US/PayPal_Braintree/js/helper/is-cart-virtual.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pub/static/frontend/VendorCustom/customtheme/en_US/PayPal_Braintree/js/helper/is-logged-in.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pub/static/frontend/VendorCustom/customtheme/en_US/PayPal_Braintree/js/helper/remove-non-digit-characters.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pub/static/frontend/VendorCustom/customtheme/en_US/PayPal_Braintree/js/helper/replace-single-quote-character.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pub/static/frontend/VendorCustom/customtheme/en_US/PayPal_Braintree/js/helper/submit-review-page.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pub/static/frontend/VendorCustom/customtheme/en_US/PayPal_Braintree/js/model/region-data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pub/static/frontend/VendorCustom/customtheme/en_US/PayPal_Braintree/js/paypal/button.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pub/static/frontend/VendorCustom/customtheme/en_US/PayPal_Braintree/js/paypal/product-page.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pub/static/frontend/VendorCustom/customtheme/en_US/PayPal_Braintree/js/view/payment/adapter.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pub/static/frontend/VendorCustom/customtheme/en_US/css/styles-l.css" beforeDir="false" afterPath="$PROJECT_DIR$/pub/static/frontend/VendorCustom/customtheme/en_US/css/styles-l.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pub/static/frontend/VendorCustom/customtheme/en_US/css/styles-l.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/pub/static/frontend/VendorCustom/customtheme/en_US/css/styles-l.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pub/static/frontend/VendorCustom/customtheme/en_US/css/styles-l.less" beforeDir="false" afterPath="$PROJECT_DIR$/pub/static/frontend/VendorCustom/customtheme/en_US/css/styles-l.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pub/static/frontend/VendorCustom/customtheme/en_US/css/styles-m.css" beforeDir="false" afterPath="$PROJECT_DIR$/pub/static/frontend/VendorCustom/customtheme/en_US/css/styles-m.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pub/static/frontend/VendorCustom/customtheme/en_US/css/styles-m.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/pub/static/frontend/VendorCustom/customtheme/en_US/css/styles-m.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pub/static/frontend/VendorCustom/customtheme/en_US/css/styles-m.less" beforeDir="false" afterPath="$PROJECT_DIR$/pub/static/frontend/VendorCustom/customtheme/en_US/css/styles-m.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pub/static/frontend/VendorCustom/customtheme/en_US/images/select-bg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pub/static/frontend/VendorCustom/customtheme/en_US/mage/accordion.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pub/static/frontend/VendorCustom/customtheme/en_US/mage/dropdowns.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pub/static/frontend/VendorCustom/customtheme/en_US/mage/redirect-url.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/var/log/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/var/log/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var/log/system.log" beforeDir="false" afterPath="$PROJECT_DIR$/var/log/system.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/view_preprocessed/pub/static/frontend/VendorCustom/customtheme/en_US/css/styles-l.less" beforeDir="false" afterPath="$PROJECT_DIR$/var/view_preprocessed/pub/static/frontend/VendorCustom/customtheme/en_US/css/styles-l.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/view_preprocessed/pub/static/frontend/VendorCustom/customtheme/en_US/css/styles-m.less" beforeDir="false" afterPath="$PROJECT_DIR$/var/view_preprocessed/pub/static/frontend/VendorCustom/customtheme/en_US/css/styles-m.less" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -763,7 +762,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "feature/frontend/GDWN-1001",
     "last_opened_file_path": "/home/developer/Sites/myproject/app/design/frontend/VendorCustom/customtheme/Magento_Wishlist/web/css/source",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -837,11 +836,49 @@
       <workItem from="1747289142417" duration="25801000" />
       <workItem from="1747375721091" duration="25234000" />
       <workItem from="1747406608995" duration="993000" />
-      <workItem from="1747635068112" duration="24297000" />
+      <workItem from="1747635068112" duration="27466000" />
+      <workItem from="1747721727809" duration="4934000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="main" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="*" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
