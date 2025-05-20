@@ -65,21 +65,18 @@
 
             <referenceContainer name="custom.header.middle.container">
                 <container name="custom.header.middle.wrapper" htmlTag="div" htmlClass="custom-header-middle-wrapper" before="top.search">
-                    <container name="custom.header.onemore.container.for.top.links" htmlTag="div" htmlClass="custom-header-onemore-container-for-top-links" after="-">
-                        <block class="Magento\Framework\View\Element\Template" name="custom.top.links.block" template="Magento_Theme::custom-top-links-block/custom-top-links-block.phtml"/>
-                        <!--<container name="custom.header.left.container" htmlTag="div" htmlClass="custom-header-left-container" after="-"/>-->
-                    </container>
-                    <container name="custom.header.top.links.container" htmlTag="div" htmlClass="custom-header-top-links-container">
-                        <block class="Magento\Framework\View\Element\Template" name="middle.top.links" template="Magento_Theme::middle-top-links/middle_top_links.phtml"/>
-                            <!-- КОПІЯ  "Contact Us" -->
+                    <block class="Magento\Framework\View\Element\Template" name="custom.top.links.block" template="Magento_Theme::custom-top-links-block/custom-top-links-block.phtml" after="-"/>
+                    <!--<container name="custom.header.left.container" htmlTag="div" htmlClass="custom-header-left-container" after="-"/>-->
+                    <block class="Magento\Framework\View\Element\Template" name="middle.top.links" template="Magento_Theme::middle-top-links/middle_top_links.phtml">
+                        <!-- КОПІЯ  "Contact Us" -->
                         <block class="Magento\Framework\View\Element\Html\Link\Current" ifconfig="contact/contact/enabled" name="contact-us-link-header">
                             <arguments>
                                 <argument name="label" xsi:type="string" translate="true">Контакти</argument>
                                 <argument name="path" xsi:type="string">contact</argument>
                             </arguments>
                         </block>
-                            <!-- КОПІЯ  "Contact Us" -->
-                    </container>
+                        <!-- КОПІЯ  "Contact Us" -->
+                    </block>
                 </container>
                 <container name="custom.header.middle.wrapper.second" htmlTag="div" htmlClass="custom-header-middle-wrapper-second">
                     <container name="custom.header.left.container" htmlTag="div" htmlClass="custom-header-left-container" after="-"/>
