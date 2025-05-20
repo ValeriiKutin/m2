@@ -65,6 +65,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "ValeriiKutin"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/ValeriiKutin/m2.git",
+    "accountId": "e4d90260-3332-49d1-87b9-c533c3339e79"
+  }
+}]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/vendor/magento/module-layered-navigation/view/frontend/layout/catalog_category_view_type_layered.xml" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/vendor/magento/module-layered-navigation/view/frontend/layout/catalog_category_view_type_layered_without_children.xml" root0="SKIP_INSPECTION" />
@@ -798,7 +810,7 @@
       <workItem from="1747375721091" duration="25234000" />
       <workItem from="1747406608995" duration="993000" />
       <workItem from="1747635068112" duration="27466000" />
-      <workItem from="1747721727809" duration="6050000" />
+      <workItem from="1747721727809" duration="8055000" />
     </task>
     <servers />
   </component>
