@@ -1,2 +1,7 @@
 node_modules
-vendor
+/var/*
+/generated/*
+/pub/static/*
+/vendor/*
+app/etc/env.php
+
