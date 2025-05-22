@@ -2,7 +2,7 @@ var config = {
     map: {
         "*": {
             modal: "Magento_Cms/js/modal",
-            myCustomWidget: "Magento_Theme/js/my-custom-widget"
+            customWidget: "Magento_Theme/js/my-custom-widget"
         }
     },
     paths: {

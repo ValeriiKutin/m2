@@ -2,10 +2,11 @@ define(['jquery', 'mage/translate'], function($, $t) {
     'use strict';
 
     return function(targetWidget) {
+        const regex = /^[а-яА-ЯіІїЇєЄйЙэЭъЪёЁ'-]+$/;
         $.validator.addMethod(
             'cyrillicValidate',
-            (value) => /^[а-яА-ЯіІїЇєЄйЙэЭъЪёЁ'-]+$/.test(value),
-            $t('Please enter Cyrillic word')
+            (value) => regex.test(value),
+            $t('Please enter cyrillic word')
         )
         return targetWidget;
     }
