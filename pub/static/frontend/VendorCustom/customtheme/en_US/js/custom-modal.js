@@ -1,1 +1,0 @@
-/var/www/html/app/design/frontend/VendorCustom/customtheme/web/js/custom-modal.js
